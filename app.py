@@ -2,7 +2,6 @@ import streamlit as st
 from lida import Manager, TextGenerationConfig , llm  
 from dotenv import load_dotenv
 import os
-#import google.generativeai as genai
 import openai
 from PIL import Image
 from io import BytesIO
@@ -10,7 +9,6 @@ import base64
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
-#genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def base64_to_image(base64_string):
     # Decode the base64 string
